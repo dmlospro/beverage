@@ -392,9 +392,9 @@ export default class MainMenu extends Sprite {
     this.redrawVisibility();
   }
 
-  public get isAda() {
-    return this._isAda;
-  }
+  // public get isAda() {
+  //   return this._isAda;
+  // }
 
   public set isAda(isAda: boolean) {
     if (this._isAda !== isAda) {
