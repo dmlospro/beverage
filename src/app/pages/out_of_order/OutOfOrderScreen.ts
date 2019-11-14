@@ -166,18 +166,18 @@ export default class OutOfOrderScreen extends AbstractScreen {
 
     this._outOfOrderItemsSprite = new Sprite();
 
-    this._outOfOrderItems.forEach((outOfOrderItem) => {
-      const outOfOrderItemText = new Text(outOfOrderItem.Description, TextUtils.getStyleBody(16, 0xA9A9A9, 'normal', 'center'));
-      outOfOrderItemText.y = top;
-      top += outOfOrderItemText.height;
+    // this._outOfOrderItems.forEach((outOfOrderItem) => {
+    //   const outOfOrderItemText = new Text(outOfOrderItem.Description, TextUtils.getStyleBody(16, 0xA9A9A9, 'normal', 'center'));
+    //   outOfOrderItemText.y = top;
+    //   top += outOfOrderItemText.height;
 
-      if (outOfOrderItemText.width > maxWidth) {
-        maxWidth = outOfOrderItemText.width;
-      }
+    //   if (outOfOrderItemText.width > maxWidth) {
+    //     maxWidth = outOfOrderItemText.width;
+    //   }
 
-      this._outOfOrderItemsText.push(outOfOrderItemText);
-      this._outOfOrderItemsSprite.addChild(outOfOrderItemText);
-    });
+    //   this._outOfOrderItemsText.push(outOfOrderItemText);
+    //   this._outOfOrderItemsSprite.addChild(outOfOrderItemText);
+    // });
 
     this._outOfOrderItemsSprite.x = this.Platform.width - maxWidth - this._outOfOrderItemsHorizontalMargin;
     this._outOfOrderItemsSprite.y = this._outOfOrderItemsVerticalMargin;
